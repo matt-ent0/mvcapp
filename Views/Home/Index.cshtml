@@ -1,4 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-MvcApp is running!
+MvcApp is running in a Docker container in Azure for App Services.
+The container is hosted in DockerHub.
+Azure has a webhook that allows DockerHub to publish the container to Azure.
+
+Kestrel is listening on port 8080.
+Docker magically maps port 8080 to port 80.
