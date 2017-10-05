@@ -1,5 +1,6 @@
 FROM microsoft/aspnetcore
 WORKDIR /app
 COPY pub .
-EXPOSE 8080
+EXPOSE 80
+EXPOSE 22
 ENTRYPOINT ["dotnet", "mvcapp.dll"]
